@@ -1,14 +1,14 @@
 {
     "title": "jenniferxiao",
     "name": "jenniferxiao",
-    "version": "1",
+    "version": "1.01",
     "description": "jenniferxiao website",
     "keywords": [
         "css",
         "sass",
         "html",
         "responsive",
-        "theme",
+        "theme"
     ],
     "homepage": "https://jenniferxiao.me",
     "bugs": {
