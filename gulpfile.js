@@ -57,6 +57,10 @@ gulp.task('vendor', function() {
       './node_modules/simple-line-icons/css/**',
     ])
     .pipe(gulp.dest('./vendor/simple-line-icons/css'))
+  gulp.src([
+    './node_modules/magnific-popup/dist/*'
+  ])
+  .pipe(gulp.dest('./vendor/magnific-popup'))
 
 });
 
