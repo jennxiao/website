@@ -139,7 +139,7 @@ p {
 .projects {
    min-height: 50rem;
   display: table;
-  width: 100%;
+  width: auto;
   height: auto;
   padding-top: 10rem;
   padding-bottom: 8rem;
@@ -148,7 +148,7 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
   background-size: cover;
-  background-attachment: local;
+  background-attachment: scroll;
 }
 
 .interests {
@@ -384,6 +384,7 @@ p {
   overflow: hidden;
   max-width: 500px;
   margin: auto auto 1rem;
+  object-fit: none; object-position: center;
 }
 
 .portfolio-item .caption {
