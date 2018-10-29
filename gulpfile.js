@@ -49,14 +49,15 @@ gulp.task('vendor', function() {
 
   // Simple Line Icons
   gulp.src([
-      './node_modules/simple-line-icons/fonts/**',
+      './node_modules/simple-line-icons/fonts/**'
     ])
     .pipe(gulp.dest('./vendor/simple-line-icons/fonts'))
 
   gulp.src([
-      './node_modules/simple-line-icons/css/**',
+      './node_modules/simple-line-icons/css/**'
     ])
     .pipe(gulp.dest('./vendor/simple-line-icons/css'))
+
   gulp.src([
     './node_modules/magnific-popup/dist/*'
   ])
@@ -81,7 +82,7 @@ gulp.task('css:compile', function() {
 });
 
 // Minify CSS
-gulp.task('css:minify', ['css:compile'], function() {
+gulp.task('css:minify',  gulp.series('css:compile', function() {
   return gulp.src([
       './css/*.css',
       '!./css/*.min.css'
@@ -92,7 +93,7 @@ gulp.task('css:minify', ['css:compile'], function() {
     }))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
-});
+}));
 
 // CSS
 gulp.task('css', ['css:compile', 'css:minify']);
@@ -112,7 +113,7 @@ gulp.task('js:minify', function() {
     }))
     .pipe(gulp.dest('./js'))
     .pipe(browserSync.stream());
-});
+}); 
 
 // JS
 gulp.task('js', ['js:minify']);

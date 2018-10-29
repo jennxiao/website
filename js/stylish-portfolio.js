@@ -40,12 +40,33 @@
     }
   });
 
+    $('.portfolio-item').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#username',
+    modal: true
+  });
+  $(document).on('click', '.portfolio-modal-dismiss', function(e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+
+    $(function() {
+    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+      $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+    }).on("focus", ".floating-label-form-group", function() {
+      $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function() {
+      $(this).removeClass("floating-label-form-group-with-focus");
+    });
+  });
+
 })(jQuery); // End of use strict
 
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event
-var onMapMouseleaveHandler = function(event) {
+/*var onMapMouseleaveHandler = function(event) {
   var that = $(this);
   that.on('click', onMapClickHandler);
   that.off('mouseleave', onMapMouseleaveHandler);
@@ -61,4 +82,4 @@ var onMapClickHandler = function(event) {
   that.on('mouseleave', onMapMouseleaveHandler);
 }
 // Enable map zooming with mouse scroll when the user clicks the map
-$('.map').on('click', onMapClickHandler);
+$('.map').on('click', onMapClickHandler); */
