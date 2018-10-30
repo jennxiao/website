@@ -41,7 +41,6 @@
         "is-valid-glob": "*",
         "resolve-options": "*",
         "cloneable-readable": "*",
-        "gulp-sass": "4.0.1",
         "clone-buffer": "*",
         "undertaker": "*"
     },
@@ -52,6 +51,7 @@
         "gulp-clean-css": "3.10.0",
         "gulp-header": "2.0.5",
         "gulp-rename": "1.4.0",
-        "gulp-uglify": "3.0.1"
+        "gulp-uglify": "3.0.1",
+        "gulp-sass": "4.0.1"
     }
 }
