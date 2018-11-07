@@ -204,7 +204,7 @@ h5 {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 530px;
+  max-width: 40vw;
   margin: auto auto 1rem;
 }
 
@@ -344,7 +344,7 @@ a:hover, a:focus, a:active {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/welcomecenter.jpg") no-repeat center center; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/background1.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -359,7 +359,7 @@ a:hover, a:focus, a:active {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/skillscenter.jpg") no-repeat center center; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/background9.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -375,7 +375,7 @@ a:hover, a:focus, a:active {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/aboutmecenter.jpg") no-repeat center center; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/background2.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -390,7 +390,7 @@ a:hover, a:focus, a:active {
   height: auto;
   padding-top: 10rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/projectscenter.jpg") no-repeat center center; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/background6.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -405,7 +405,7 @@ a:hover, a:focus, a:active {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/interestscenter.jpg") no-repeat center center; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/background3.jpg") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -421,7 +421,7 @@ a:hover, a:focus, a:active {
   padding-top: 10rem;
   padding-bottom: 8rem;
   padding-left: 5rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/contactmecenter.jpg") no-repeat center center; 
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/background5.png") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -432,8 +432,8 @@ a:hover, a:focus, a:active {
 
 .portfolio-modal .portfolio-modal-dialog {
   padding: 10rem 1rem;
-  width:  50%
-  max-width:  calc(70vw);
+  min-height: calc(100vh - 2rem);
+  width:  auto;
   margin: auto;
   position: relative;
   z-index: 2;
@@ -463,4 +463,15 @@ a:hover, a:focus, a:active {
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 3rem;
   }
+}
+
+.background1  {
+  background:url("img/welcomebox.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size: contain;
+  background-attachment: local;
+  height: auto;
+  width: auto;
 }
