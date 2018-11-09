@@ -18,10 +18,7 @@ body {
   padding: 1.25rem 2.5rem;
 }
 
-.content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-}
+
 
 .content-section-heading h2 {
   font-size: 3rem;
@@ -349,7 +346,7 @@ a:hover, a:focus, a:active {
     -moz-background-size: cover;
     -o-background-size: cover;
   background-size: cover;
-  background-attachment: inherit;
+  background-attachment: local;
 }
 
 .skills {
@@ -399,7 +396,7 @@ a:hover, a:focus, a:active {
 }
 
 .interests {
-   min-height: 50rem;
+  min-height: 50rem;
   display: table;
   width: 100%;
   height: auto;
@@ -463,15 +460,4 @@ a:hover, a:focus, a:active {
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 3rem;
   }
-}
-
-.background1  {
-  background:url("img/welcomebox.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  background-size: contain;
-  background-attachment: local;
-  height: auto;
-  width: auto;
 }
