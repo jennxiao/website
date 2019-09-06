@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Arvo';
+  font-family: 'Lato';
 }
 
 .btn-xl {
@@ -206,6 +206,7 @@ h5 {
   position: relative;
   overflow: hidden;
   margin: auto auto 1rem;
+  border-radius: 25px;
 }
 
 .portfolio-item .caption {
@@ -235,7 +236,7 @@ h5 {
   font-size: 1.2rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 10px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
@@ -244,27 +245,33 @@ h5 {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(0px);
     clip-path: inset(0px);
+    justify-content: center;
+    align-content: center;
   }
   .portfolio-item .caption .caption-content {
     -webkit-transition:  0.25s;
     transition: 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+    justify-content: center;
+    align-content: center;
   }
   .portfolio-item img {
+    border-radius: 25px;
     height: 100%;
     width: 100%;
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
+    justify-content: center;
+    align-content: center;
   }
   .portfolio-item:hover img {
+    border-radius: 25px;
     background-color: rgba(44,44,84, .8);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
+    border-radius: 25px;
     background-color:  rgba(44,44,84, .8);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
@@ -434,12 +441,12 @@ a:hover, a:focus, a:active {
 
 .portfolio-modal .portfolio-modal-dialog {
   padding: 10rem 1rem;
-  min-height: calc(100vh - 2rem);
+  min-height: calc(100vh - 20rem);
   width:  auto;
   margin: auto;
   position: relative;
   z-index: 2;
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3rem 1rem rgba(209, 103, 103, 0.5);
   box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
 }
 
@@ -691,4 +698,3 @@ a:hover, a:focus, a:active {
     width: 100%;
   }
 }
-
